@@ -22,7 +22,7 @@ const ItemCtrl = (function(){
     return {
         getItems: function() {
             return data.items
-        }
+        },
         logData: function(){
             return data
         }
@@ -62,7 +62,7 @@ const App = (function(ItemCtrl, UICtrl){
             console.log('Initializing App')
             // fetch items from data structure
             const items = ItemCtrl.getItems()
-            // popilate items list
+            // populate items list
             UICtrl.populateItemList(items)
         }
     }
